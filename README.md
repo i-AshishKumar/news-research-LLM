@@ -1,6 +1,6 @@
 # 🧠 News Research LLM Tool
 
-A lightweight, browser-based application that helps you analyze and extract insights from multiple news articles using LLMs and Retrieval-Augmented Generation (RAG). Just input a list of URLs (or upload a file), ask a question, and get a grounded answer—with source links.
+A lightweight, browser-based application that helps you analyze and extract insights from multiple news articles using LLMs and Retrieval-Augmented Generation (RAG). Just input a news URLs, ask a question, and get a grounded answer—with source links.
 
 👉 [Live Demo](https://news-research-llm.streamlit.app/)
 
