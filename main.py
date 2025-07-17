@@ -15,7 +15,6 @@ OPENAI_API_KEY = st.secrets["openai"]["OPENAI_API_KEY"]
 
 st.title("News Research Tool 📈")
 st.sidebar.title("News Article URLs")
-st.conn
 
 urls = []
 for i in range(3):
