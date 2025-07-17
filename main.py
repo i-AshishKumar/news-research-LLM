@@ -1,6 +1,5 @@
 import os
 import streamlit as st
-import openai
 import time
 from langchain_openai import OpenAI
 from langchain.chains import RetrievalQAWithSourcesChain
@@ -9,8 +8,7 @@ from langchain_community.document_loaders import UnstructuredURLLoader, Selenium
 from langchain_openai import OpenAIEmbeddings
 from langchain_community.vectorstores import FAISS
 
-# from dotenv import load_dotenv
-# load_dotenv()
+
 os.environ["OPENAI_API_KEY"] = st.secrets["api_key"]
 
 st.title("News Research Tool 📈")
@@ -58,7 +56,7 @@ if query:
         st.header("Answer")
         st.write(result["answer"])
 
-            # Display sources, if available
+        # Display sources, if available
         sources = result.get("sources", "")
         if sources:
             st.subheader("Sources:")
