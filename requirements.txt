@@ -8,6 +8,4 @@ selenium
 unstructured
 libmagic
 python-magic
-python-magic-bin
 faiss-cpu
-rich<14
