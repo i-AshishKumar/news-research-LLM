@@ -11,7 +11,7 @@ from langchain_community.vectorstores import FAISS
 
 # from dotenv import load_dotenv
 # load_dotenv()
-OPENAI_API_KEY = st.secrets["api_key "]
+OPENAI_API_KEY = st.secrets["api_key"]
 
 st.title("News Research Tool 📈")
 st.sidebar.title("News Article URLs")
