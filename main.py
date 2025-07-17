@@ -1,6 +1,6 @@
 import os
 import streamlit as st
-import pickle
+import openai
 import time
 from langchain_openai import OpenAI
 from langchain.chains import RetrievalQAWithSourcesChain
@@ -11,7 +11,7 @@ from langchain_community.vectorstores import FAISS
 
 # from dotenv import load_dotenv
 # load_dotenv()
-OPENAI_API_KEY = st.secrets["api_key"]
+openai.api_key = st.secrets["api_key"]
 
 st.title("News Research Tool 📈")
 st.sidebar.title("News Article URLs")
@@ -24,7 +24,7 @@ for i in range(3):
 process_url_clicked = st.sidebar.button("Process URLs")
 
 main_placeholder = st.empty()
-llm = OpenAI(temperature=0.9, max_tokens=500, api_key = OPENAI_API_KEY)
+llm = OpenAI(temperature=0.9, max_tokens=500)
 
 if process_url_clicked:
     # load data
