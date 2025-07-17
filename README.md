@@ -8,8 +8,8 @@ A lightweight, browser-based application that helps you analyze and extract insi
 
 ## 🚀 Features
 
-- **Load URLs or Upload Files**  
-  Paste article URLs directly, or upload a text file containing multiple links. The tool automatically fetches and processes each article.
+- **Load URLs**  
+  Paste article URLs directly. The tool automatically fetches and processes each article.
 
 - **Content Processing with LangChain**  
   Uses LangChain’s `UnstructuredURLLoader` to extract clean text content from news pages.
