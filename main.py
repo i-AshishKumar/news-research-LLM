@@ -11,6 +11,7 @@ from langchain_community.vectorstores import FAISS
 
 # from dotenv import load_dotenv
 # load_dotenv()
+os.environ["OPENAI_API_KEY"] = st.secrets["api_key"]
 openai.api_key = st.secrets["api_key"]
 
 st.title("News Research Tool 📈")
