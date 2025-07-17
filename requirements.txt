@@ -8,6 +8,5 @@ unstructured
 libmagic
 python-magic
 python-magic-bin
-tiktoken
 faiss-cpu
 rich<14
